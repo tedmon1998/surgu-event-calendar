@@ -1,0 +1,28 @@
+{
+    "cli": {
+        "version": ">= 0.52.0"
+    },
+    "build": {
+        "development": {
+            "developmentClient": true,
+            "distribution": "internal"
+        },
+        "preview": {
+            "channel": "staging",
+            "distribution": "internal",
+            "android": {
+                "buildType": "apk"
+            }
+        },
+        "production": {},
+        "production_play_market": {
+            "channel": "production_play_market",
+            "android": {
+                "buildType": "app-bundle"
+            }
+        },
+        "production_app_store": {
+            "channel": "production_app_store"
+        }
+    }
+}
